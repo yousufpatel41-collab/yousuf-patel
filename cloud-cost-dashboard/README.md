@@ -4,6 +4,8 @@ An Analytics / BI portfolio project by Yousuf Patel. It answers three questions:
 
 **Data:** Microsoft's official FOCUS sample, 1-19 June 2024, USD. **Budgets:** illustrative assumptions. This is a portfolio analysis, not client work or a claim of realised savings.
 
+[Download the complete project package](https://github.com/yousufpatel41-collab/yousuf-patel/raw/refs/heads/main/downloads/Cloud_Cost_Dashboard_Project.zip). It includes the large billing CSV and SQLite database, which are omitted from the individual Git file tree. You can also recreate them using the scripts below.
+
 ![Dashboard overview](reports/dashboard_overview.png)
 
 ## Open the project
