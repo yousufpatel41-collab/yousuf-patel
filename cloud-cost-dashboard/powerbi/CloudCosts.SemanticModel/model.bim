@@ -1,0 +1,347 @@
+{
+  "name": "Cloud cost review",
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "en-US",
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DataFolder",
+        "kind": "m",
+        "expression": "\"C:/Users/yousu/Documents/Codex/2026-10-11/an/outputs/cloud-cost-dashboard/data/\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
+      }
+    ],
+    "tables": [
+      {
+        "name": "Costs",
+        "columns": [
+          {
+            "name": "ChargeDate",
+            "dataType": "dateTime",
+            "sourceColumn": "ChargeDate",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "SubAccountId",
+            "dataType": "string",
+            "sourceColumn": "SubAccountId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ServiceName",
+            "dataType": "string",
+            "sourceColumn": "ServiceName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Department",
+            "dataType": "string",
+            "sourceColumn": "Department",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "BilledCost",
+            "dataType": "double",
+            "sourceColumn": "BilledCost",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EffectiveCost",
+            "dataType": "double",
+            "sourceColumn": "EffectiveCost",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AbsoluteBilledCost",
+            "dataType": "double",
+            "sourceColumn": "AbsoluteBilledCost",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnallocatedAbsoluteCost",
+            "dataType": "double",
+            "sourceColumn": "UnallocatedAbsoluteCost",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RecordCount",
+            "dataType": "int64",
+            "sourceColumn": "RecordCount",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Costs",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"daily_costs.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumnTypes(Headers, {{\"ChargeDate\", type date}, {\"SubAccountId\", type text}, {\"ServiceName\", type text}, {\"Department\", type text}, {\"BilledCost\", type number}, {\"EffectiveCost\", type number}, {\"AbsoluteBilledCost\", type number}, {\"UnallocatedAbsoluteCost\", type number}, {\"RecordCount\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Net billed cost",
+            "expression": "SUM(Costs[BilledCost])",
+            "formatString": "$#,0.00;($#,0.00);$0.00"
+          },
+          {
+            "name": "Effective cost",
+            "expression": "SUM(Costs[EffectiveCost])",
+            "formatString": "$#,0.00;($#,0.00);$0.00"
+          },
+          {
+            "name": "Source records",
+            "expression": "SUM(Costs[RecordCount])",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Absolute billed cost",
+            "expression": "SUM(Costs[AbsoluteBilledCost])",
+            "formatString": "$#,0.00;($#,0.00);$0.00"
+          },
+          {
+            "name": "Unallocated cost share",
+            "expression": "DIVIDE(SUM(Costs[UnallocatedAbsoluteCost]), [Absolute billed cost])",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Period scenario budget",
+            "expression": "IF(ISFILTERED(Services) || ISFILTERED(Departments), BLANK(), SUM(Budgets[MonthlyBudget]) * COUNTROWS(VALUES('Calendar'[Date])) / DAY(EOMONTH(MAX('Calendar'[Date]),0)))",
+            "formatString": "$#,0.00;($#,0.00);$0.00"
+          },
+          {
+            "name": "Budget variance",
+            "expression": "IF(ISBLANK([Period scenario budget]), BLANK(), [Net billed cost] - [Period scenario budget])",
+            "formatString": "$#,0.00;($#,0.00);$0.00"
+          },
+          {
+            "name": "Budget variance percent",
+            "expression": "DIVIDE([Budget variance], [Period scenario budget])",
+            "formatString": "0.0%"
+          }
+        ]
+      },
+      {
+        "name": "Accounts",
+        "columns": [
+          {
+            "name": "SubAccountId",
+            "dataType": "string",
+            "sourceColumn": "SubAccountId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SubAccountName",
+            "dataType": "string",
+            "sourceColumn": "SubAccountName",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Accounts",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"dim_accounts.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumnTypes(Headers, {{\"SubAccountId\", type text}, {\"SubAccountName\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Services",
+        "columns": [
+          {
+            "name": "ServiceName",
+            "dataType": "string",
+            "sourceColumn": "ServiceName",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Services",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"dim_services.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumnTypes(Headers, {{\"ServiceName\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Departments",
+        "columns": [
+          {
+            "name": "Department",
+            "dataType": "string",
+            "sourceColumn": "Department",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Departments",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"dim_departments.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumnTypes(Headers, {{\"Department\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Calendar",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Calendar",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"calendar.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumnTypes(Headers, {{\"Date\", type date}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Budgets",
+        "columns": [
+          {
+            "name": "SubAccountId",
+            "dataType": "string",
+            "sourceColumn": "SubAccountId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "BillingMonth",
+            "dataType": "string",
+            "sourceColumn": "BillingMonth",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthlyBudget",
+            "dataType": "double",
+            "sourceColumn": "MonthlyBudget",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Budgets",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"budgets.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumnTypes(Headers, {{\"SubAccountId\", type text}, {\"BillingMonth\", type text}, {\"MonthlyBudget\", type number}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "886bb57d-b05c-52c7-8fc6-4fd54658b341",
+        "fromTable": "Costs",
+        "fromColumn": "ChargeDate",
+        "toTable": "Calendar",
+        "toColumn": "Date",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "41cdbc0c-d5f4-520a-bca6-b7b3f136448d",
+        "fromTable": "Costs",
+        "fromColumn": "SubAccountId",
+        "toTable": "Accounts",
+        "toColumn": "SubAccountId",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "30ef9334-ad6e-5619-aa6d-1fb34568a384",
+        "fromTable": "Budgets",
+        "fromColumn": "SubAccountId",
+        "toTable": "Accounts",
+        "toColumn": "SubAccountId",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "fcd0f3c3-3c53-5cdb-8495-e0a728bd9db4",
+        "fromTable": "Costs",
+        "fromColumn": "ServiceName",
+        "toTable": "Services",
+        "toColumn": "ServiceName",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "215f2344-6d51-5e1b-b9b5-9b6d8667ce98",
+        "fromTable": "Costs",
+        "fromColumn": "Department",
+        "toTable": "Departments",
+        "toColumn": "Department",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection"
+      }
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schema_validated_files": 28,
+  "schema_errors": 0,
+  "native_desktop_refresh_verified": false,
+  "files": [
+    {
+      "file": "CloudCosts.pbip",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition.pbir",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.SemanticModel\\definition.pbism",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\report.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\version.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\pages.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\allocation\\page.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\drivers\\page.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\overview\\page.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\allocation\\visuals\\accountfilter\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\allocation\\visuals\\datefilter\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\allocation\\visuals\\definition\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\allocation\\visuals\\departments\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\allocation\\visuals\\records\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\allocation\\visuals\\share\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\drivers\\visuals\\accountfilter\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\drivers\\visuals\\breakdown\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\drivers\\visuals\\datefilter\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\drivers\\visuals\\services\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\overview\\visuals\\accountfilter\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\overview\\visuals\\accounts\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\overview\\visuals\\daily\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\overview\\visuals\\datefilter\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\overview\\visuals\\kpi0\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\overview\\visuals\\kpi1\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\overview\\visuals\\kpi2\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\overview\\visuals\\kpi3\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "CloudCosts.Report\\definition\\pages\\overview\\visuals\\services\\visual.json",
+      "errors": []
+    }
+  ]
+}

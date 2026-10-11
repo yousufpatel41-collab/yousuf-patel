@@ -1,0 +1,12 @@
+{
+  "source_to_sql_difference": -1.4551915228366852e-11,
+  "source_to_daily_difference": -1.4551915228366852e-11,
+  "daily_record_count": 135272,
+  "source_rows": 135272,
+  "missing_monetary_values": 0,
+  "invalid_tag_json": 0,
+  "negative_cost_rows": 40143,
+  "all_currency_values": [
+    "USD"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "accounts",
+  "position": {
+    "x": 20,
+    "y": 495,
+    "width": 1240,
+    "height": 205,
+    "z": 0,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Accounts"
+                    }
+                  },
+                  "Property": "SubAccountName"
+                }
+              },
+              "queryRef": "Accounts.SubAccountName",
+              "nativeQueryRef": "SubAccountName"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Costs"
+                    }
+                  },
+                  "Property": "Net billed cost"
+                }
+              },
+              "queryRef": "Costs.Net billed cost",
+              "nativeQueryRef": "Net billed cost"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Costs"
+                    }
+                  },
+                  "Property": "Period scenario budget"
+                }
+              },
+              "queryRef": "Costs.Period scenario budget",
+              "nativeQueryRef": "Period scenario budget"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Costs"
+                    }
+                  },
+                  "Property": "Budget variance"
+                }
+              },
+              "queryRef": "Costs.Budget variance",
+              "nativeQueryRef": "Budget variance"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Costs"
+                    }
+                  },
+                  "Property": "Budget variance percent"
+                }
+              },
+              "queryRef": "Costs.Budget variance percent",
+              "nativeQueryRef": "Budget variance percent"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

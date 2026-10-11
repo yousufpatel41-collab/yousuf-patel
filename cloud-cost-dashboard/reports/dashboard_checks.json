@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "total": true,
+  "account_filter": true,
+  "date_filter": true,
+  "invalid_date_guard": true,
+  "service_budget_guard": true,
+  "budget_edit": true,
+  "csv_export": true,
+  "all_pages": true,
+  "mobile_layout": true,
+  "javascript_errors": []
+}

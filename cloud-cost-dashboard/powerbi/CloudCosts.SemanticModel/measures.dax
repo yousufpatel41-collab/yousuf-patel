@@ -1,0 +1,23 @@
+Net billed cost =
+SUM(Costs[BilledCost])
+
+Effective cost =
+SUM(Costs[EffectiveCost])
+
+Source records =
+SUM(Costs[RecordCount])
+
+Absolute billed cost =
+SUM(Costs[AbsoluteBilledCost])
+
+Unallocated cost share =
+DIVIDE(SUM(Costs[UnallocatedAbsoluteCost]), [Absolute billed cost])
+
+Period scenario budget =
+IF(ISFILTERED(Services) || ISFILTERED(Departments), BLANK(), SUM(Budgets[MonthlyBudget]) * COUNTROWS(VALUES('Calendar'[Date])) / DAY(EOMONTH(MAX('Calendar'[Date]),0)))
+
+Budget variance =
+IF(ISBLANK([Period scenario budget]), BLANK(), [Net billed cost] - [Period scenario budget])
+
+Budget variance percent =
+DIVIDE([Budget variance], [Period scenario budget])

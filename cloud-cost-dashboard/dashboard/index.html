@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cloud cost review · Yousuf Patel</title>
+<link rel="stylesheet" href="styles.css">
+<script src="data.js"></script><script src="app.js" defer></script>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="brand"><span class="monogram">YP</span><div>Yousuf Patel<small>Analytics portfolio</small></div></div>
+  <p class="nav-label">CLOUD COST REVIEW</p>
+  <nav aria-label="Report pages">
+    <button data-page="overview" class="active">Overview</button>
+    <button data-page="drivers">Cost drivers</button>
+    <button data-page="exceptions">Spend exceptions <span id="exceptionBadge"></span></button>
+    <button data-page="budget">Budget plan</button>
+    <button data-page="quality">Data quality</button>
+  </nav>
+  <div class="source-card"><strong>Microsoft sample data</strong><p>June 2024<br>Azure · USD</p><a href="https://github.com/microsoft/finops-toolkit/releases/tag/v14" target="_blank" rel="noopener">View source ↗</a></div>
+</aside>
+<main>
+  <header><div><p class="eyebrow">FINANCE & TECHNOLOGY</p><h1 id="pageTitle">Cloud cost review</h1><p class="subtitle" id="periodLabel"></p></div><div class="header-actions"><button id="reset" class="secondary">Reset filters</button><button id="export" class="primary">Export view</button></div></header>
+  <div class="context"><span class="dot"></span>Official sample billing data. Budgets are editable planning assumptions. No employer savings are claimed.</div>
+  <section class="filters" aria-label="Report filters">
+    <label>From<input type="date" id="from"></label><label>To<input type="date" id="to"></label>
+    <label>Account<select id="account"><option value="">All accounts</option></select></label>
+    <label>Service<select id="service"><option value="">All services</option></select></label>
+    <label>Department tag<select id="department"><option value="">All departments</option></select></label>
+  </section>
+  <p id="filterError" role="alert" hidden></p>
+  <div id="content" aria-live="polite"></div>
+  <footer><span>Prepared by Yousuf Patel</span><span>Source records, credits and assumptions remain traceable.</span></footer>
+</main>
+</body></html>

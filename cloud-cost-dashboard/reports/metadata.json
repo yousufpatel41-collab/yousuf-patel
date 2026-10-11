@@ -1,0 +1,31 @@
+{
+  "publisher": "Microsoft FinOps toolkit",
+  "source_type": "Official sample billing dataset",
+  "source_url": "https://github.com/microsoft/finops-toolkit/releases/tag/v14",
+  "source_file": "EA-Cost-FOCUS_1.0.csv",
+  "source_sha256": "9b192e205da384caecb627e8a4281a0229195d96a8be24bce66057b25c6a8603",
+  "currency": "USD",
+  "period_start": "2024-06-01",
+  "period_end": "2024-06-19",
+  "coverage_days": 19,
+  "month_days": 30,
+  "source_rows": 135272,
+  "daily_rows": 4492,
+  "account_count": 13,
+  "service_count": 36,
+  "net_billed_cost": 35445.85903000456,
+  "effective_cost": 36040.596124704825,
+  "absolute_cost": 46947.74857410962,
+  "unallocated_absolute_cost": 39590.27292804056,
+  "positive_charges": 41196.8038020571,
+  "negative_adjustments": -5750.944772052521,
+  "monthly_scenario_budget": 36100,
+  "period_scenario_budget": 22863.333333333332,
+  "anomaly_count": 0,
+  "anomaly_rule": {
+    "prior_calendar_days": 7,
+    "minimum_baseline_usd": 25,
+    "minimum_excess_usd": 100,
+    "ratio_threshold": 1.8
+  }
+}

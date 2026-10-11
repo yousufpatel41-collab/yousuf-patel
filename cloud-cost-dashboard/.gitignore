@@ -1,0 +1,7 @@
+.cache/
+.venv/
+__pycache__/
+*.inspect.ndjson
+powerbi/**/.pbi/
+data/cloud_costs.sqlite
+data/billing_records.csv
