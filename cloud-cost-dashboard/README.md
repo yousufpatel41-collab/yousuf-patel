@@ -1,6 +1,6 @@
 # Cloud Cost and Budget Dashboard
 
-An Analytics / BI portfolio project by Yousuf Patel. It answers three questions: where cloud spending is concentrated, how account spend compares with a planning scenario, and how much cost can be allocated to a department.
+An Analytics / BI portfolio project by Yousuf Patel. **[Open the live dashboard](https://yousuf-patel-analytics.boldsloth2.chatgpt.site/cloud/).** It answers three questions: where cloud spending is concentrated, how account spend compares with a planning scenario, and how much cost can be allocated to a department.
 
 **Data:** Microsoft's official FOCUS sample, 1-19 June 2024, USD. **Budgets:** illustrative assumptions. This is a portfolio analysis, not client work or a claim of realised savings.
 
@@ -11,7 +11,7 @@ An Analytics / BI portfolio project by Yousuf Patel. It answers three questions:
 ## Open the project
 
 - **Dashboard:** open `dashboard/index.html` in a browser. It works without a server or an internet connection. For a local server, run `python -m http.server 8741` from this folder and visit `http://localhost:8741/dashboard/`.
-- **Excel:** open `Cloud_Cost_Review.xlsx`. Change the dates on Review within 1-19 June 2024 or edit the blue budget cells on Budgets. Formulas and charts recalculate. Daily costs contains the 4,492 prepared daily rows; the original projected billing records are in the separate CSV.
+- **Excel:** open `Cloud_Cost_Review.xlsx`. Change the dates on Review within 1-19 June 2024 or edit the blue budget cells on Budgets. Formulas and charts recalculate. Daily costs contains the 4,492 prepared daily rows; the prepared billing records are in the separate CSV.
 - **Power BI:** open `powerbi/CloudCosts.pbip`, set the DataFolder parameter and refresh. See `powerbi/README.md` for setup and verification limits.
 - **Business report:** `reports/Cloud_Cost_Business_Review.pdf` contains the findings, next steps and method.
 - **SQL:** `data/cloud_costs.sqlite` is ready to query. `sql/model.sql` defines the views and `sql/analysis.sql` contains five business queries.

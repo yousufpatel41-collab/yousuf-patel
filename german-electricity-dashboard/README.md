@@ -1,6 +1,6 @@
 # German Electricity Cost Dashboard
 
-An Analytics / BI portfolio project by Yousuf Patel. It examines German wholesale price exposure and compares transparent household tariff and flexible-demand scenarios.
+An Analytics / BI portfolio project by Yousuf Patel. **[Open the live dashboard](https://yousuf-patel-analytics.boldsloth2.chatgpt.site/electricity/).** It examines German wholesale price exposure and compares transparent household tariff and flexible-demand scenarios.
 
 The market data is **real published SMARD data** for the Germany/Luxembourg bidding zone. Household consumption, tariffs and equipment availability are assumptions. This project does not contain household meter readings, supplier offers or realised savings.
 
