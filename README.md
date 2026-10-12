@@ -1,10 +1,10 @@
 # Yousuf Patel — analytics portfolio
 
-**[Open the live portfolio and both interactive dashboards](https://yousuf-patel-analytics.boldsloth2.chatgpt.site)**
+**[Open the live portfolio and both interactive dashboards](https://yousufpatel41-collab.github.io)**
 
 ## Cloud Cost and Budget Dashboard
 
-[Open the live dashboard](https://yousuf-patel-analytics.boldsloth2.chatgpt.site/cloud/) | [View the project files](cloud-cost-dashboard) | [Download the complete package](downloads/Cloud_Cost_Dashboard_Project.zip)
+[Open the live dashboard](https://yousufpatel41-collab.github.io/cloud/) | [View the project files](cloud-cost-dashboard) | [Download the complete package](downloads/Cloud_Cost_Dashboard_Project.zip)
 
 Cloud cost analysis using Python, SQL, Excel and an interactive browser dashboard, with a native Power BI project. The analysis covers 135,272 Microsoft sample billing records, 13 accounts and 36 services.
 
@@ -16,7 +16,7 @@ See the project README for setup, sources, findings and interview notes. The com
 
 ## German Electricity Cost Dashboard
 
-[Open the live dashboard](https://yousuf-patel-analytics.boldsloth2.chatgpt.site/electricity/) | [View the project files](german-electricity-dashboard) | [Download the complete package](downloads/German_Electricity_Dashboard_Project.zip)
+[Open the live dashboard](https://yousufpatel41-collab.github.io/electricity/) | [View the project files](german-electricity-dashboard) | [Download the complete package](downloads/German_Electricity_Dashboard_Project.zip)
 
 Analysis of 24,335 real published SMARD hourly electricity prices, with an interactive dashboard, editable Excel tariff scenarios, SQL database, raw source snapshot, business report and Power BI project. The model preserves negative prices, daylight saving time and missing data. Household tariffs are illustrative; Power BI Desktop refresh remains pending.
 

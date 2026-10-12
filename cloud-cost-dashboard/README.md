@@ -1,6 +1,6 @@
 # Cloud Cost and Budget Dashboard
 
-An Analytics / BI portfolio project by Yousuf Patel. **[Open the live dashboard](https://yousuf-patel-analytics.boldsloth2.chatgpt.site/cloud/).** It answers three questions: where cloud spending is concentrated, how account spend compares with a planning scenario, and how much cost can be allocated to a department.
+An Analytics / BI portfolio project by Yousuf Patel. **[Open the live dashboard](https://yousufpatel41-collab.github.io/cloud/).** It answers three questions: where cloud spending is concentrated, how account spend compares with a planning scenario, and how much cost can be allocated to a department.
 
 **Data:** Microsoft's official FOCUS sample, 1-19 June 2024, USD. **Budgets:** illustrative assumptions. This is a portfolio analysis, not client work or a claim of realised savings.
 
