@@ -1,0 +1,328 @@
+{
+  "name": "German electricity cost review",
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "en-US",
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "tables": [
+      {
+        "name": "Prices",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hours",
+            "dataType": "int64",
+            "sourceColumn": "Hours",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SumEURMWh",
+            "dataType": "double",
+            "sourceColumn": "SumEURMWh",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NegativeHours",
+            "dataType": "int64",
+            "sourceColumn": "NegativeHours",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MeanEURMWh",
+            "dataType": "double",
+            "sourceColumn": "MeanEURMWh",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ConsumptionWeight",
+            "dataType": "double",
+            "sourceColumn": "ConsumptionWeight",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "WholesaleCostPerMonthlyKWh",
+            "dataType": "double",
+            "sourceColumn": "WholesaleCostPerMonthlyKWh",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EveningMeanEURMWh",
+            "dataType": "double",
+            "sourceColumn": "EveningMeanEURMWh",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Cheapest4MeanEURMWh",
+            "dataType": "double",
+            "sourceColumn": "Cheapest4MeanEURMWh",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Prices",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"daily_prices.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumnTypes(Headers, {{\"Date\", type date}, {\"Hours\", Int64.Type}, {\"SumEURMWh\", type number}, {\"NegativeHours\", Int64.Type}, {\"MeanEURMWh\", type number}, {\"ConsumptionWeight\", type number}, {\"WholesaleCostPerMonthlyKWh\", type number}, {\"EveningMeanEURMWh\", type number}, {\"Cheapest4MeanEURMWh\", type number}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Observed hours",
+            "expression": "SUM(Prices[Hours])",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Mean wholesale EUR per MWh",
+            "expression": "DIVIDE(SUM(Prices[SumEURMWh]), [Observed hours])",
+            "formatString": "\u20ac#,0.00;(\u20ac#,0.00);\u20ac0.00"
+          },
+          {
+            "name": "Negative hours",
+            "expression": "SUM(Prices[NegativeHours])",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Negative share",
+            "expression": "DIVIDE([Negative hours], [Observed hours])",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Equivalent observed months",
+            "expression": "SUM(Prices[ConsumptionWeight])",
+            "formatString": "0.000"
+          },
+          {
+            "name": "Scenario consumption kWh",
+            "expression": "IF([Observed hours]>0, [Equivalent observed months] * SUM(Scenario[monthly_kwh]), BLANK())",
+            "formatString": "#,0.0"
+          },
+          {
+            "name": "Flat tariff EUR",
+            "expression": "IF([Observed hours]>0, [Scenario consumption kWh] * SUM(Scenario[flat_eur_kwh]) + [Equivalent observed months] * SUM(Scenario[monthly_fixed_fee]), BLANK())",
+            "formatString": "\u20ac#,0.00;(\u20ac#,0.00);\u20ac0.00"
+          },
+          {
+            "name": "Dynamic tariff EUR",
+            "expression": "IF([Observed hours]>0, SUM(Prices[WholesaleCostPerMonthlyKWh]) * SUM(Scenario[monthly_kwh]) * SUM(Scenario[vat_multiplier]) + [Scenario consumption kWh] * SUM(Scenario[dynamic_adder_eur_kwh]) + [Equivalent observed months] * SUM(Scenario[monthly_fixed_fee]), BLANK())",
+            "formatString": "\u20ac#,0.00;(\u20ac#,0.00);\u20ac0.00"
+          },
+          {
+            "name": "Flat minus dynamic EUR",
+            "expression": "IF([Observed hours]>0, [Flat tariff EUR] - [Dynamic tariff EUR], BLANK())",
+            "formatString": "\u20ac#,0.00;(\u20ac#,0.00);\u20ac0.00"
+          },
+          {
+            "name": "Flexible timing difference EUR",
+            "expression": "IF([Observed hours]>0, (SUM(Prices[EveningMeanEURMWh])-SUM(Prices[Cheapest4MeanEURMWh])) / 1000 * SUM(Scenario[flexible_kwh_per_day]) * SUM(Scenario[vat_multiplier]), BLANK())",
+            "formatString": "\u20ac#,0.00;(\u20ac#,0.00);\u20ac0.00"
+          },
+          {
+            "name": "Mean clock hour EUR per MWh",
+            "expression": "AVERAGE(Hourly[PriceEURMWh])",
+            "formatString": "\u20ac#,0.00;(\u20ac#,0.00);\u20ac0.00"
+          }
+        ]
+      },
+      {
+        "name": "Hourly",
+        "columns": [
+          {
+            "name": "TimestampUTC",
+            "dataType": "string",
+            "sourceColumn": "TimestampUTC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hour",
+            "dataType": "int64",
+            "sourceColumn": "Hour",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Weekday",
+            "dataType": "int64",
+            "sourceColumn": "Weekday",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PriceEURMWh",
+            "dataType": "double",
+            "sourceColumn": "PriceEURMWh",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "IsNegative",
+            "dataType": "int64",
+            "sourceColumn": "IsNegative",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Hourly",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"hourly_prices.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumnTypes(Headers, {{\"TimestampUTC\", type text}, {\"Date\", type date}, {\"Hour\", Int64.Type}, {\"Weekday\", Int64.Type}, {\"PriceEURMWh\", type number}, {\"IsNegative\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Calendar",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "dataType": "string",
+            "sourceColumn": "Month",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Calendar",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"calendar.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumnTypes(Headers, {{\"Date\", type date}, {\"Year\", Int64.Type}, {\"Month\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Scenario",
+        "columns": [
+          {
+            "name": "monthly_kwh",
+            "dataType": "double",
+            "sourceColumn": "monthly_kwh",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "flat_eur_kwh",
+            "dataType": "double",
+            "sourceColumn": "flat_eur_kwh",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "dynamic_adder_eur_kwh",
+            "dataType": "double",
+            "sourceColumn": "dynamic_adder_eur_kwh",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "vat_multiplier",
+            "dataType": "double",
+            "sourceColumn": "vat_multiplier",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "monthly_fixed_fee",
+            "dataType": "double",
+            "sourceColumn": "monthly_fixed_fee",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "flexible_kwh_per_day",
+            "dataType": "double",
+            "sourceColumn": "flexible_kwh_per_day",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Scenario",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"tariff_assumptions.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumnTypes(Headers, {{\"monthly_kwh\", type number}, {\"flat_eur_kwh\", type number}, {\"dynamic_adder_eur_kwh\", type number}, {\"vat_multiplier\", type number}, {\"monthly_fixed_fee\", type number}, {\"flexible_kwh_per_day\", type number}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "cf8107e3-239d-5345-957d-980530107cb3",
+        "fromTable": "Prices",
+        "fromColumn": "Date",
+        "toTable": "Calendar",
+        "toColumn": "Date",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "168a1c2b-99e3-5219-a9f1-1d9398f38e33",
+        "fromTable": "Hourly",
+        "fromColumn": "Date",
+        "toTable": "Calendar",
+        "toColumn": "Date",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DataFolder",
+        "kind": "m",
+        "expression": "\"C:/Users/yousu/Documents/Codex/2026-10-11/an/outputs/german-electricity-dashboard/data/\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
+      }
+    ]
+  }
+}

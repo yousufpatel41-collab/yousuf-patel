@@ -1,0 +1,108 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "inputs",
+  "position": {
+    "x": 830,
+    "y": 235,
+    "width": 430,
+    "height": 450,
+    "z": 0,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scenario"
+                    }
+                  },
+                  "Property": "monthly_kwh"
+                }
+              },
+              "queryRef": "Scenario.monthly_kwh",
+              "nativeQueryRef": "monthly_kwh"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scenario"
+                    }
+                  },
+                  "Property": "flat_eur_kwh"
+                }
+              },
+              "queryRef": "Scenario.flat_eur_kwh",
+              "nativeQueryRef": "flat_eur_kwh"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scenario"
+                    }
+                  },
+                  "Property": "dynamic_adder_eur_kwh"
+                }
+              },
+              "queryRef": "Scenario.dynamic_adder_eur_kwh",
+              "nativeQueryRef": "dynamic_adder_eur_kwh"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scenario"
+                    }
+                  },
+                  "Property": "vat_multiplier"
+                }
+              },
+              "queryRef": "Scenario.vat_multiplier",
+              "nativeQueryRef": "vat_multiplier"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scenario"
+                    }
+                  },
+                  "Property": "monthly_fixed_fee"
+                }
+              },
+              "queryRef": "Scenario.monthly_fixed_fee",
+              "nativeQueryRef": "monthly_fixed_fee"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Scenario"
+                    }
+                  },
+                  "Property": "flexible_kwh_per_day"
+                }
+              },
+              "queryRef": "Scenario.flexible_kwh_per_day",
+              "nativeQueryRef": "flexible_kwh_per_day"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

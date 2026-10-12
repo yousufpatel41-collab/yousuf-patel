@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "annual_benchmark": true,
+  "heatmap": true,
+  "tariff_edit": true,
+  "persistence": true,
+  "restore": true,
+  "exports": true,
+  "missing_date_guard": true,
+  "invalid_dates": true,
+  "mobile_layout": true,
+  "javascript_errors": []
+}

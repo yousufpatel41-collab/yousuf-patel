@@ -1,0 +1,1 @@
+The optional Excel builder uses @oai/artifact-tool in the Codex bundled Node runtime. The supplied workbook can be edited in Excel without this dependency. The Python rebuild commands do not regenerate Excel.

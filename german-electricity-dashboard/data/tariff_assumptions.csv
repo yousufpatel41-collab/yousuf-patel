@@ -1,0 +1,2 @@
+monthly_kwh,flat_eur_kwh,dynamic_adder_eur_kwh,vat_multiplier,monthly_fixed_fee,flexible_kwh_per_day
+250,0.32,0.2,1.19,10,12

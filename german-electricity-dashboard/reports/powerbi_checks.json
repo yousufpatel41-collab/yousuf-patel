@@ -1,0 +1,143 @@
+{
+  "schema_validated_files": 34,
+  "schema_errors": 0,
+  "native_desktop_refresh_verified": false,
+  "files": [
+    {
+      "file": "Electricity.pbip",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition.pbir",
+      "errors": []
+    },
+    {
+      "file": "Electricity.SemanticModel\\definition.pbism",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\report.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\version.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\pages.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\flexibility\\page.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\overview\\page.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\patterns\\page.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\tariffs\\page.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\flexibility\\visuals\\dates\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\flexibility\\visuals\\days\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\flexibility\\visuals\\difference\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\flexibility\\visuals\\years\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\overview\\visuals\\dates\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\overview\\visuals\\kpi0\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\overview\\visuals\\kpi1\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\overview\\visuals\\kpi2\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\overview\\visuals\\kpi3\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\overview\\visuals\\months\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\overview\\visuals\\trend\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\overview\\visuals\\years\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\patterns\\visuals\\clock\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\patterns\\visuals\\dates\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\patterns\\visuals\\table\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\patterns\\visuals\\years\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\tariffs\\visuals\\comparison\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\tariffs\\visuals\\dates\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\tariffs\\visuals\\inputs\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\tariffs\\visuals\\kpi0\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\tariffs\\visuals\\kpi1\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\tariffs\\visuals\\kpi2\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\tariffs\\visuals\\kpi3\\visual.json",
+      "errors": []
+    },
+    {
+      "file": "Electricity.Report\\definition\\pages\\tariffs\\visuals\\years\\visual.json",
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "mean_reconciles": true,
+  "adder_edit_recalculates": true,
+  "missing_day_guard": true,
+  "native_charts": 2
+}

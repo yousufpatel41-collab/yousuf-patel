@@ -1,0 +1,732 @@
+[
+  {
+    "file": "4169_DE_hour_1703458800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1703458800000.json",
+    "sha256": "ae8c1327a5f50a1f88829302654390d6f2e001fdb3873f3c494d7fafb4d57a2c"
+  },
+  {
+    "file": "4169_DE_hour_1704063600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1704063600000.json",
+    "sha256": "5dc6629440972654c3fc6af23863c08a3e0308e0e9bc9c12e9772d8bba12634b"
+  },
+  {
+    "file": "4169_DE_hour_1704668400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1704668400000.json",
+    "sha256": "8e44c0afb8f37ba6b8d11de0b75a17f272eb7bc2043a48423e55e806211ed064"
+  },
+  {
+    "file": "4169_DE_hour_1705273200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1705273200000.json",
+    "sha256": "f2a7ea3c0f24b0e840564a07946971321d699d892331aa074ccb9c4865059bdc"
+  },
+  {
+    "file": "4169_DE_hour_1705878000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1705878000000.json",
+    "sha256": "d22e700808a139729fcaa4f1de9b5c0373d2150238594139940b2aed40562c8e"
+  },
+  {
+    "file": "4169_DE_hour_1706482800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1706482800000.json",
+    "sha256": "682921cb36ce85a979bd9b95c0def414f19504837fd8eee12ed3293adff4efd7"
+  },
+  {
+    "file": "4169_DE_hour_1707087600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1707087600000.json",
+    "sha256": "36ce28b932eb21e06c4aa827ba19e7e1a9868d16d103e541e3621d287cf59490"
+  },
+  {
+    "file": "4169_DE_hour_1707692400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1707692400000.json",
+    "sha256": "66b1862aa900585268ce1669976a20ccca7c5d225f4c945853b6a8ff33d01ce1"
+  },
+  {
+    "file": "4169_DE_hour_1708297200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1708297200000.json",
+    "sha256": "6de3ab039936d22462740280274e28dbb5e7ae837492529dc77ad657b26d0df5"
+  },
+  {
+    "file": "4169_DE_hour_1708902000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1708902000000.json",
+    "sha256": "00a8a4b1b02149bdf05fdf5fdb4afe5d4648cce868e3678874678c1d74a114b1"
+  },
+  {
+    "file": "4169_DE_hour_1709506800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1709506800000.json",
+    "sha256": "7a38308d753744c82768900c9eb1f1b08393de10a25b44dfa0e4343fc250a5cb"
+  },
+  {
+    "file": "4169_DE_hour_1710111600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1710111600000.json",
+    "sha256": "25f7b33f0a91a2f078c5f9a7efb41345d7f4472d91be17bc307b68a8939d4d77"
+  },
+  {
+    "file": "4169_DE_hour_1710716400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1710716400000.json",
+    "sha256": "aa5a9ee94eb9b858bc337f53a6bf22959253504c7f62a3cd5784c106106f42e4"
+  },
+  {
+    "file": "4169_DE_hour_1711321200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1711321200000.json",
+    "sha256": "133780de84c22d6206d82d57b3da436d6143fea35d1949642efdf5cfa0cac05f"
+  },
+  {
+    "file": "4169_DE_hour_1711922400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1711922400000.json",
+    "sha256": "12cd4c278d64f5fb069079b7174f67232cf018f3be6dac6b7b5ddcab68431f2a"
+  },
+  {
+    "file": "4169_DE_hour_1712527200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1712527200000.json",
+    "sha256": "33fbdbd0a4387285225c7a83dc55b7178fcb3d5d2857738dbd817b6132918a26"
+  },
+  {
+    "file": "4169_DE_hour_1713132000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1713132000000.json",
+    "sha256": "bacddcfcce7ef0f36fa1df1621b25ad38fa8a17abf4bf6942ad4218afb49ccc6"
+  },
+  {
+    "file": "4169_DE_hour_1713736800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1713736800000.json",
+    "sha256": "fc39ec317e7ed6f95d9b51dd3fc073819cad90efed19a033b5c32b4d2a6d4bfe"
+  },
+  {
+    "file": "4169_DE_hour_1714341600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1714341600000.json",
+    "sha256": "787847f5b84174ffb491a6970517754d25713e68c0b5ed26654890350083b5c6"
+  },
+  {
+    "file": "4169_DE_hour_1714946400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1714946400000.json",
+    "sha256": "afc4f399e4a344d34bbcf8550f8221e90101f45cb507eefa5e104cddb153e003"
+  },
+  {
+    "file": "4169_DE_hour_1715551200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1715551200000.json",
+    "sha256": "8f7b272fcf1038fce4a025e6f966c30c24c6b56fad2319cb0d8d287071adcd41"
+  },
+  {
+    "file": "4169_DE_hour_1716156000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1716156000000.json",
+    "sha256": "c52b6158247a8db14c0f961c66541e8445f29ad19d8be78d97bfd905242256a3"
+  },
+  {
+    "file": "4169_DE_hour_1716760800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1716760800000.json",
+    "sha256": "a0b864d2bf8db430dff1b40845359a2b0ccf4f3737709e4958ce3e2026213ab5"
+  },
+  {
+    "file": "4169_DE_hour_1717365600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1717365600000.json",
+    "sha256": "d9942b18de009de0b77bf66524f3608e13b40b3869af3787e4a5bae286a638e5"
+  },
+  {
+    "file": "4169_DE_hour_1717970400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1717970400000.json",
+    "sha256": "bc7d09dd044bc7802405461338f14e67055b2b2a461183c113f25e01ecaa72e5"
+  },
+  {
+    "file": "4169_DE_hour_1718575200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1718575200000.json",
+    "sha256": "fc6a45f9b4098b6bad737535eee4a487405c712bd955c7833f4edf6b3dcbc6d0"
+  },
+  {
+    "file": "4169_DE_hour_1719180000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1719180000000.json",
+    "sha256": "dc877711f38e7678aba959f8b6cd517b737fd7cea8521a06fa608cd729cdc8fd"
+  },
+  {
+    "file": "4169_DE_hour_1719784800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1719784800000.json",
+    "sha256": "f331f87445bd860556c322ddc92d6451ba6b26fb3f8d4f6ba6aec8f172319a1d"
+  },
+  {
+    "file": "4169_DE_hour_1720389600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1720389600000.json",
+    "sha256": "d7f10d65c75da1d249162b968eea8ff8f107bbddd75db850f973a115f61be5fa"
+  },
+  {
+    "file": "4169_DE_hour_1720994400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1720994400000.json",
+    "sha256": "81deda3c039466c05c2a4a5af2bcb9e0acdeeff4b7e002da8f90ac03edbefd39"
+  },
+  {
+    "file": "4169_DE_hour_1721599200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1721599200000.json",
+    "sha256": "003c8f4cb2a739eac8231047bd3742f74aec69d0d5232001cd3db9db620c1838"
+  },
+  {
+    "file": "4169_DE_hour_1722204000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1722204000000.json",
+    "sha256": "ca22c6f1a79551cc6ebbe77bde21644344f5b84964a796eef04c768e84b103f0"
+  },
+  {
+    "file": "4169_DE_hour_1722808800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1722808800000.json",
+    "sha256": "29818374bcee215788a72ea119286f811739b651987faa08eb291535072383bb"
+  },
+  {
+    "file": "4169_DE_hour_1723413600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1723413600000.json",
+    "sha256": "384d7f29319e4e0239f5ca43fb91603ebddfa7f30c5da6ae039d3179a80200d7"
+  },
+  {
+    "file": "4169_DE_hour_1724018400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1724018400000.json",
+    "sha256": "7de2624bfa23b24400856a2c29b337cbf84cbdaf8a71fa2be058aefe2a4e260d"
+  },
+  {
+    "file": "4169_DE_hour_1724623200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1724623200000.json",
+    "sha256": "f222b4618d81bddbab4dbf2993365510b85d66471345ed695ebdff101b641cab"
+  },
+  {
+    "file": "4169_DE_hour_1725228000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1725228000000.json",
+    "sha256": "c0079ef166a46eeb3505ddace6873a52a245cc44177e7bf721dc17ada5ab1132"
+  },
+  {
+    "file": "4169_DE_hour_1725832800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1725832800000.json",
+    "sha256": "941ee713439dd1e725377556a60ba4601abe1790e54b692732b657e0dcd8f210"
+  },
+  {
+    "file": "4169_DE_hour_1726437600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1726437600000.json",
+    "sha256": "c627022fa9f955497670e6905c9c4cb4e679fee03bf8103d251af53754b8cf07"
+  },
+  {
+    "file": "4169_DE_hour_1727042400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1727042400000.json",
+    "sha256": "0fde0a700fdb3bb6c82203102953f9fe91b7f563fdaeeddf8c673c9822325c77"
+  },
+  {
+    "file": "4169_DE_hour_1727647200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1727647200000.json",
+    "sha256": "02cb9c750f24606c2ad86045513b4edce7db7ab0c02f615d2e8052f3a1e7df6c"
+  },
+  {
+    "file": "4169_DE_hour_1728252000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1728252000000.json",
+    "sha256": "60d684036e5f4537bdb23560c8e11a7e5f4e3495c0bcca9183d7c14e6bd248f3"
+  },
+  {
+    "file": "4169_DE_hour_1728856800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1728856800000.json",
+    "sha256": "11f0fc8787a338acc827fd2a9c6ebb5edc19f2a748fc13787e02b2b8a1e39968"
+  },
+  {
+    "file": "4169_DE_hour_1729461600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1729461600000.json",
+    "sha256": "fe05c13800951deef827e2ba038af3b077115f322e3da4eabd225273875a1f9a"
+  },
+  {
+    "file": "4169_DE_hour_1730070000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1730070000000.json",
+    "sha256": "011e9f16b2a1d4b11f433f5ff298c05792a5709c08477cb06fd7f920fdb421ed"
+  },
+  {
+    "file": "4169_DE_hour_1730674800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1730674800000.json",
+    "sha256": "fa5a1892eb452c9daf1a7ac8172da33d52db2884e1e7b92934b4bfb80317e020"
+  },
+  {
+    "file": "4169_DE_hour_1731279600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1731279600000.json",
+    "sha256": "d98c12b5f775a0f2e6c4ab058f0f50b7e83f6e2d4ef73e91d6a51b361f6cbd63"
+  },
+  {
+    "file": "4169_DE_hour_1731884400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1731884400000.json",
+    "sha256": "cb82ef848aff6db618957fa730e5305a45af4d9c0a20e972716911301d4680cb"
+  },
+  {
+    "file": "4169_DE_hour_1732489200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1732489200000.json",
+    "sha256": "a9f9c3404c4ffcd752ed4c80e1552634c5cbe02b8e7c3cd7cd3ad19757d96f2f"
+  },
+  {
+    "file": "4169_DE_hour_1733094000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1733094000000.json",
+    "sha256": "7ebeea2843dca94e71f8bfc406937fa672a2300711b1ebcf4b69b952f4e1cbb6"
+  },
+  {
+    "file": "4169_DE_hour_1733698800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1733698800000.json",
+    "sha256": "679362c65b8ab5c735bd93c34fd0790d0c64c5844a4dcf0b6faec7a807d7983c"
+  },
+  {
+    "file": "4169_DE_hour_1734303600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1734303600000.json",
+    "sha256": "c8a209f4cc951bd44ad8c4fd7ffc2fccaa029633fce529abee5175cb8c47310f"
+  },
+  {
+    "file": "4169_DE_hour_1734908400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1734908400000.json",
+    "sha256": "8b758a41c27ed463f4078e3e193cb28f7d3eba1451ceed5d6b9f9eccc4296809"
+  },
+  {
+    "file": "4169_DE_hour_1735513200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1735513200000.json",
+    "sha256": "56cdb6c04da735b38e8473eb027907e58585618c32d21e8e32909f70fd02caf5"
+  },
+  {
+    "file": "4169_DE_hour_1736118000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1736118000000.json",
+    "sha256": "ff9cac399c335027b8ec6f9eb7dddf199f3fa3c94040a36b2d473028956a792f"
+  },
+  {
+    "file": "4169_DE_hour_1736722800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1736722800000.json",
+    "sha256": "9b1a2c2d31db5e2ada9a14757af20adb24e094c14b9bf5b948fd87033804693c"
+  },
+  {
+    "file": "4169_DE_hour_1737327600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1737327600000.json",
+    "sha256": "8898416783922b95446cd24bf5d139d4402eea4afdcbeb3c911f397a121ca475"
+  },
+  {
+    "file": "4169_DE_hour_1737932400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1737932400000.json",
+    "sha256": "702ad5441e33dcb953c87e2912d21ee53a269b50fbc744901a0940e0b5904b08"
+  },
+  {
+    "file": "4169_DE_hour_1738537200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1738537200000.json",
+    "sha256": "e71725803b9f206e1568ad77e54deb68694670b720c6f348c8aa0d0befe85fe2"
+  },
+  {
+    "file": "4169_DE_hour_1739142000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1739142000000.json",
+    "sha256": "25c151caf8732ec457ec1871733a4b973f013b96e8e3b999a6c0b2cdd121809c"
+  },
+  {
+    "file": "4169_DE_hour_1739746800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1739746800000.json",
+    "sha256": "54dde1ed89aefbbba7e42d7bae1602621a4bf6590c7a302b37c09e614e25f10b"
+  },
+  {
+    "file": "4169_DE_hour_1740351600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1740351600000.json",
+    "sha256": "7ae55ca62e1d1a47d23b8fda58f2724618c66e16b08ff262d81e3a24289151f6"
+  },
+  {
+    "file": "4169_DE_hour_1740956400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1740956400000.json",
+    "sha256": "e89666bf7ffbc09824128d553361140294ccbdd1293f110b1af10078a81c9e96"
+  },
+  {
+    "file": "4169_DE_hour_1741561200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1741561200000.json",
+    "sha256": "bd47d7243412f2059664dcdf71e089bf33d58dd01ccaa29514f7a403bd9ef4e4"
+  },
+  {
+    "file": "4169_DE_hour_1742166000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1742166000000.json",
+    "sha256": "4797520fa76a0d44f48e19487098a8df7eccf1aaa958eac7f59ea0cb9cf2778d"
+  },
+  {
+    "file": "4169_DE_hour_1742770800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1742770800000.json",
+    "sha256": "7ca0324d3976342d06d53e2a659b029f03223eb29b06298903c1d3564243ab7f"
+  },
+  {
+    "file": "4169_DE_hour_1743372000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1743372000000.json",
+    "sha256": "cd3926cad513fc590813059c0706d4131e432748a36c1f9509779f15c2bee2b4"
+  },
+  {
+    "file": "4169_DE_hour_1743976800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1743976800000.json",
+    "sha256": "43c1c6ed29031e3af8532574b8a7b098226b498b9475b533b0a27ffaae32e0d6"
+  },
+  {
+    "file": "4169_DE_hour_1744581600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1744581600000.json",
+    "sha256": "27c4c81335240b73f0377a30c8aac0aacc031722a1a6806874a4e8d6042b3ed4"
+  },
+  {
+    "file": "4169_DE_hour_1745186400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1745186400000.json",
+    "sha256": "6e415cdcf2269e74fb713cc4f87f132339af360469b0aa45930dd77fc507bc97"
+  },
+  {
+    "file": "4169_DE_hour_1745791200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1745791200000.json",
+    "sha256": "c34810b6a355e131275c7a87455cafadca8323294b5100cd0cf4bee46c248643"
+  },
+  {
+    "file": "4169_DE_hour_1746396000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1746396000000.json",
+    "sha256": "2e1509c88ae6ef6147845c76974e30219383f03c63ab9cf3f7f2658df7855c0c"
+  },
+  {
+    "file": "4169_DE_hour_1747000800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1747000800000.json",
+    "sha256": "6a144876b4e6e08e131f39a97ee9edfbafe29924b53e64a6a88d4a3ef8c4bd5c"
+  },
+  {
+    "file": "4169_DE_hour_1747605600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1747605600000.json",
+    "sha256": "422744426fe176cc4f9b2aa3385f2503120ca84c534cae1802960690e96593ea"
+  },
+  {
+    "file": "4169_DE_hour_1748210400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1748210400000.json",
+    "sha256": "3cc247978c1612a49d4600ef83605932c4b67816eca2f88570dcbcee220fdb96"
+  },
+  {
+    "file": "4169_DE_hour_1748815200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1748815200000.json",
+    "sha256": "671bf28cdf8125c9b2006ffc0bc9911f694dea864a5eb7c113d86cac31ddf9f8"
+  },
+  {
+    "file": "4169_DE_hour_1749420000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1749420000000.json",
+    "sha256": "b9cf47be39bea4afa9e2405f679e09814023d13c5364adc19f4afaacb073d15a"
+  },
+  {
+    "file": "4169_DE_hour_1750024800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1750024800000.json",
+    "sha256": "0d9e4d8ce2ef7565f8839dd1d13d31968daf6d65544924c52bbe7aa9f6713a81"
+  },
+  {
+    "file": "4169_DE_hour_1750629600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1750629600000.json",
+    "sha256": "c7bc8e86746e5fa7f824e774754930b07106a9393f19a87d3546f7a0fa918a8e"
+  },
+  {
+    "file": "4169_DE_hour_1751234400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1751234400000.json",
+    "sha256": "72f3cc880bd5ebf40da87a0830379f74997e0c01c4ce0a40d91e56a9c82f511a"
+  },
+  {
+    "file": "4169_DE_hour_1751839200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1751839200000.json",
+    "sha256": "95432cdd8428db537c3f5cd61917c14737c98040b2802f793d507e1fc9e8ecaa"
+  },
+  {
+    "file": "4169_DE_hour_1752444000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1752444000000.json",
+    "sha256": "823de2ff7bea026c0d2be92430581b65fca96e8c9a492a0293ea90df2c507d7f"
+  },
+  {
+    "file": "4169_DE_hour_1753048800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1753048800000.json",
+    "sha256": "f9fb4ccfbcbfabb64bb8058adb7854e83e94bd4725dfba5353a0cda8dad7a9a8"
+  },
+  {
+    "file": "4169_DE_hour_1753653600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1753653600000.json",
+    "sha256": "97e9397024bb6373473e5a8782d94a04822502798b2071c4a48a1f16eb95bbb2"
+  },
+  {
+    "file": "4169_DE_hour_1754258400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1754258400000.json",
+    "sha256": "446eb2f49e9b162a928b71c7340c693b1ca46027b6c949d897bcf85ba5870630"
+  },
+  {
+    "file": "4169_DE_hour_1754863200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1754863200000.json",
+    "sha256": "5a665831b1bb0088cde618ba71dd83e6d7c6e97f0d452c45a40ab40c792b5459"
+  },
+  {
+    "file": "4169_DE_hour_1755468000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1755468000000.json",
+    "sha256": "b6238b9bce34998f8b8de4d395954ad4e10383eff019b125172f75db08c9cee3"
+  },
+  {
+    "file": "4169_DE_hour_1756072800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1756072800000.json",
+    "sha256": "cb48a2fca30fa03c421be8c8afa7a80e004c1b7b894369bc3888863a5f200235"
+  },
+  {
+    "file": "4169_DE_hour_1756677600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1756677600000.json",
+    "sha256": "baefa2bfcfe014397457380a2c58c5d0895dfc739da911af240a3776ceaf9c06"
+  },
+  {
+    "file": "4169_DE_hour_1757282400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1757282400000.json",
+    "sha256": "e6e941c37ff63e098d00a3e09714d61ce8d2e2d9bb4bd0e7604888da6c39050f"
+  },
+  {
+    "file": "4169_DE_hour_1757887200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1757887200000.json",
+    "sha256": "6863e362c775cb5649a922f47518d8ad8e20cd4a00c2f34bfe11027bb2a2dd7f"
+  },
+  {
+    "file": "4169_DE_hour_1758492000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1758492000000.json",
+    "sha256": "52fae16b7e237c24a339acacadb6e3e5e2f25a10d947bbbfca05342821219d29"
+  },
+  {
+    "file": "4169_DE_hour_1759096800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1759096800000.json",
+    "sha256": "18ba945553e543d62c59979a6ee0e3c01e50e337b2164e604cd92cbda828ee5c"
+  },
+  {
+    "file": "4169_DE_hour_1759701600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1759701600000.json",
+    "sha256": "16436bbb90523cc01e9b8cec2d046ada8737517dae4e23897fb0ff92ff197c88"
+  },
+  {
+    "file": "4169_DE_hour_1760306400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1760306400000.json",
+    "sha256": "c3679b056e5819921e226c4ff3495c315a8c64cc2f29da18094a87a87c3de32c"
+  },
+  {
+    "file": "4169_DE_hour_1760911200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1760911200000.json",
+    "sha256": "d5a14830c2c3708af8aa25f299de28795a8db02ca9b75098af0f7681950bc7fa"
+  },
+  {
+    "file": "4169_DE_hour_1761519600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1761519600000.json",
+    "sha256": "7f7ceb6caf1b6026c96f7ebd185fb5f3c0c10f99f01f7f50f654ef484e3260d8"
+  },
+  {
+    "file": "4169_DE_hour_1762124400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1762124400000.json",
+    "sha256": "eb4951e91cd6d5d638febba78800ae429d679d82b98a3d8721e3577cd2375467"
+  },
+  {
+    "file": "4169_DE_hour_1762729200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1762729200000.json",
+    "sha256": "efec5203544f4d1506872f969fb5f81901a95c73e835baa2b1be230610c0e513"
+  },
+  {
+    "file": "4169_DE_hour_1763334000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1763334000000.json",
+    "sha256": "3be508a0c38cc28fd5d8a1f0802317be1c5d8243e7b84a34fd22cd77c08aa77f"
+  },
+  {
+    "file": "4169_DE_hour_1763938800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1763938800000.json",
+    "sha256": "b0fe5da1cfb24cbc3fa8504ace21b5da06e61253556ce06fc2d8473887dd95a8"
+  },
+  {
+    "file": "4169_DE_hour_1764543600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1764543600000.json",
+    "sha256": "a8099b26c9626b0372510c92680a2aa68c40fd6fb8d3b48ade0fed92a36208b9"
+  },
+  {
+    "file": "4169_DE_hour_1765148400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1765148400000.json",
+    "sha256": "e87c16462c22ee0d366b26d29f3e0eb4041aff99d3fbaa04f432fe49c56f809f"
+  },
+  {
+    "file": "4169_DE_hour_1765753200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1765753200000.json",
+    "sha256": "98e24529dfa9773fa9d8e51bd612b45dd40bfda1390cea59268cf7171ac93a50"
+  },
+  {
+    "file": "4169_DE_hour_1766358000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1766358000000.json",
+    "sha256": "a6d895ea4f7a7ed6a4288da1787e6ad3a5b613845ebea98e36bd1ac5d3c90887"
+  },
+  {
+    "file": "4169_DE_hour_1766962800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1766962800000.json",
+    "sha256": "fdc0bfe9142e82e94325a0a669a55e83c6eb4d92fb86d77f1f6aa0fe35e20031"
+  },
+  {
+    "file": "4169_DE_hour_1767567600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1767567600000.json",
+    "sha256": "77df542402ee9039c5de8be0f14b812ab23562d7834a0bb546583cd98fb713bc"
+  },
+  {
+    "file": "4169_DE_hour_1768172400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1768172400000.json",
+    "sha256": "61d9759f17f26fc6843749a7b22468b395d78c2cfaead15f65426c6c57a80327"
+  },
+  {
+    "file": "4169_DE_hour_1768777200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1768777200000.json",
+    "sha256": "fa8cffa329bda883b8505e6495b64754c88d285baaf108c9bed05d816440779d"
+  },
+  {
+    "file": "4169_DE_hour_1769382000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1769382000000.json",
+    "sha256": "904149f799d832d84d7c7add3c17b8303adbbe6c85b30419d186b3f7001d7e30"
+  },
+  {
+    "file": "4169_DE_hour_1769986800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1769986800000.json",
+    "sha256": "bab7b2cffd8b04e9a66c3ff7cbf14d515d9b22f22e91ac17d7eeb58714fa4db9"
+  },
+  {
+    "file": "4169_DE_hour_1770591600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1770591600000.json",
+    "sha256": "3a621d3c2cb0821db093093915ff2fba2938decbb5b5c022a4820960e61ddd3a"
+  },
+  {
+    "file": "4169_DE_hour_1771196400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1771196400000.json",
+    "sha256": "6236d7e484e062dfa74c0fa5569d85c8dbfa13d706fb812eba02abe1413fb687"
+  },
+  {
+    "file": "4169_DE_hour_1771801200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1771801200000.json",
+    "sha256": "f5b29dd3bdcf3e15d4bdaf5894c82eeb0c87b4dc5b51090773ca2419cd507840"
+  },
+  {
+    "file": "4169_DE_hour_1772406000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1772406000000.json",
+    "sha256": "596e2a3e40f584d7b7737110b5cb5b653d52d239c201dff79937b9f8790e83f5"
+  },
+  {
+    "file": "4169_DE_hour_1773010800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1773010800000.json",
+    "sha256": "9154c0c5c4bdde15742da6c8067b5b5319ab947abffba0a4815b35e8a9932b29"
+  },
+  {
+    "file": "4169_DE_hour_1773615600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1773615600000.json",
+    "sha256": "b739b3826c29b35ee1289c9da19742e9461e07966b65be0e98f191190838014a"
+  },
+  {
+    "file": "4169_DE_hour_1774220400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1774220400000.json",
+    "sha256": "f5a46dc5d94a717ad7170c0232d808b418cb91ab63421346cd0e446899c53b27"
+  },
+  {
+    "file": "4169_DE_hour_1774821600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1774821600000.json",
+    "sha256": "43bff365aff353af40e805f1caca4b7b6b1d7b75ed7e33b6c5c474dc8ff0650e"
+  },
+  {
+    "file": "4169_DE_hour_1775426400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1775426400000.json",
+    "sha256": "161386adc36f9cf6e72593726906c530c120b5ea1f938621e176bef9fc09237b"
+  },
+  {
+    "file": "4169_DE_hour_1776031200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1776031200000.json",
+    "sha256": "2e149fbdc891e917c0701cce6be227833f9fd68770cb444aa2a1bc8be0f9c6e9"
+  },
+  {
+    "file": "4169_DE_hour_1776636000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1776636000000.json",
+    "sha256": "cc4dcd6aa89402335bc9b3f2426ea95cdcc100e7066eb207bb4095664e9a093f"
+  },
+  {
+    "file": "4169_DE_hour_1777240800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1777240800000.json",
+    "sha256": "aa0845816efa03752cb1675ffde58ad49db9620ab9395e2ea46c4dfd86599aeb"
+  },
+  {
+    "file": "4169_DE_hour_1777845600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1777845600000.json",
+    "sha256": "bc955cb3dc93368420506b400d1b62e10c41a2e2b71f89a0cd0988f2e66dc558"
+  },
+  {
+    "file": "4169_DE_hour_1778450400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1778450400000.json",
+    "sha256": "8b70c838b816fa598d33486f05b74950bf82d7299626fff1438b41d4d97f949d"
+  },
+  {
+    "file": "4169_DE_hour_1779055200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1779055200000.json",
+    "sha256": "bdc67014031cbe4314d3d9b5e959e152d23fcb72efb7f3cdfb381950fb83620e"
+  },
+  {
+    "file": "4169_DE_hour_1779660000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1779660000000.json",
+    "sha256": "726ca99143266b1c4612df23630fa9c9f593e30ed315333cbd7d8c6b971cb89d"
+  },
+  {
+    "file": "4169_DE_hour_1780264800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1780264800000.json",
+    "sha256": "e8490d995cf10b6a1f125e19ff700b162e7e31a6bf6b555bdb7a0f00850dc818"
+  },
+  {
+    "file": "4169_DE_hour_1780869600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1780869600000.json",
+    "sha256": "8534d970ad6144251892156bf340dc724f569b8604d85968c9c9b53fc0eff1d1"
+  },
+  {
+    "file": "4169_DE_hour_1781474400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1781474400000.json",
+    "sha256": "c646dcb15f6fbadcd7c986cff0506cb58bb6d7e8f52360d146ae32265ae878db"
+  },
+  {
+    "file": "4169_DE_hour_1782079200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1782079200000.json",
+    "sha256": "188040d89c0b36ddecf5e3379055bbb6c8ce55a9064eeb03a01dfd0f2c8d7c8e"
+  },
+  {
+    "file": "4169_DE_hour_1782684000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1782684000000.json",
+    "sha256": "1f71e32d5f6f62f89cec612e2f87c15e7878cb4e4c84109be3a05ad83a610683"
+  },
+  {
+    "file": "4169_DE_hour_1783288800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1783288800000.json",
+    "sha256": "a096dffa4c4d457c60b6d62fb7dbad701276a6e8f4765b6527b94bcdb3178788"
+  },
+  {
+    "file": "4169_DE_hour_1783893600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1783893600000.json",
+    "sha256": "1936cca1319782a2502913cbb392e77eee7e40a4d72ea3d350426e95656e909b"
+  },
+  {
+    "file": "4169_DE_hour_1784498400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1784498400000.json",
+    "sha256": "71161295fea3832ab5afe837710471980cc564dc4510830b4002c37dcd3c9816"
+  },
+  {
+    "file": "4169_DE_hour_1785103200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1785103200000.json",
+    "sha256": "d2545e5e9c9a7be1914cf7c08953195e281bef663cd48848e7627dfffe72d99a"
+  },
+  {
+    "file": "4169_DE_hour_1785708000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1785708000000.json",
+    "sha256": "b5aab796cd248ba456cad84ac71b501f9fd0f95c580b7c4cadd8d883e1c50e05"
+  },
+  {
+    "file": "4169_DE_hour_1786312800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1786312800000.json",
+    "sha256": "8a9bcc4f1bbccbbdaf641d01512b86ffd5be155621d92f86b54184401833a998"
+  },
+  {
+    "file": "4169_DE_hour_1786917600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1786917600000.json",
+    "sha256": "ee91b62f7fd3bd4cc1fd89e72ade6d4c14e60d354c516d21d162fcd8bc246d16"
+  },
+  {
+    "file": "4169_DE_hour_1787522400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1787522400000.json",
+    "sha256": "71333268ab5c4e1fc7a58595f15eecb31b81aed22ef8c1c4f3c4195d62826be0"
+  },
+  {
+    "file": "4169_DE_hour_1788127200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1788127200000.json",
+    "sha256": "4f4b8371e51963031d595b836235b6c7aa06eaa29c93b125fd9107738d9b14af"
+  },
+  {
+    "file": "4169_DE_hour_1788732000000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1788732000000.json",
+    "sha256": "39a52dff83f2b77c82471a39924ab655e92432e1d4e92efdc724ee4ef86b7db6"
+  },
+  {
+    "file": "4169_DE_hour_1789336800000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1789336800000.json",
+    "sha256": "4090b014365b5d0e0067aaf03aede1fa976b5d4fd1d38377293471fd8275ac12"
+  },
+  {
+    "file": "4169_DE_hour_1789941600000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1789941600000.json",
+    "sha256": "aa4490b4727d919bb91825c0c5ebee5c47b8b7ae8a27abe78b976f90a6d9128a"
+  },
+  {
+    "file": "4169_DE_hour_1790546400000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1790546400000.json",
+    "sha256": "8c5030ae148b9dfdbfb344e2c33108a4b6e3a2946f2d6d04127caaa0eeaf7f56"
+  },
+  {
+    "file": "4169_DE_hour_1791151200000.json",
+    "url": "https://www.smard.de/app/chart_data/4169/DE/4169_DE_hour_1791151200000.json",
+    "sha256": "172fa70dfc1a63e4efa36c331cc20c1fe5ba20b3bf7693c2d00205219fbbd132"
+  }
+]

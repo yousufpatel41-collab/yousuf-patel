@@ -11,3 +11,11 @@ The project includes editable budget assumptions, allocation analysis, financial
 ![Dashboard preview](cloud-cost-dashboard/reports/dashboard_overview.png)
 
 See the project README for setup, sources, findings and interview notes. The complete package includes the large projected billing CSV and SQLite database; these can also be recreated with the included scripts.
+
+## German Electricity Cost Dashboard
+
+[View the project](german-electricity-dashboard) | [Download the complete package](downloads/German_Electricity_Dashboard_Project.zip)
+
+Analysis of 24,335 real published SMARD hourly electricity prices, with an interactive dashboard, editable Excel tariff scenarios, SQL database, raw source snapshot, business report and Power BI project. The model preserves negative prices, daylight saving time and missing data. Household tariffs are illustrative; Power BI Desktop refresh remains pending.
+
+![Electricity dashboard preview](german-electricity-dashboard/reports/dashboard_overview.png)

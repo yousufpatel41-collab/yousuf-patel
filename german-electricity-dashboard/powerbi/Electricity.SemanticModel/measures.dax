@@ -1,0 +1,32 @@
+Observed hours =
+SUM(Prices[Hours])
+
+Mean wholesale EUR per MWh =
+DIVIDE(SUM(Prices[SumEURMWh]), [Observed hours])
+
+Negative hours =
+SUM(Prices[NegativeHours])
+
+Negative share =
+DIVIDE([Negative hours], [Observed hours])
+
+Equivalent observed months =
+SUM(Prices[ConsumptionWeight])
+
+Scenario consumption kWh =
+IF([Observed hours]>0, [Equivalent observed months] * SUM(Scenario[monthly_kwh]), BLANK())
+
+Flat tariff EUR =
+IF([Observed hours]>0, [Scenario consumption kWh] * SUM(Scenario[flat_eur_kwh]) + [Equivalent observed months] * SUM(Scenario[monthly_fixed_fee]), BLANK())
+
+Dynamic tariff EUR =
+IF([Observed hours]>0, SUM(Prices[WholesaleCostPerMonthlyKWh]) * SUM(Scenario[monthly_kwh]) * SUM(Scenario[vat_multiplier]) + [Scenario consumption kWh] * SUM(Scenario[dynamic_adder_eur_kwh]) + [Equivalent observed months] * SUM(Scenario[monthly_fixed_fee]), BLANK())
+
+Flat minus dynamic EUR =
+IF([Observed hours]>0, [Flat tariff EUR] - [Dynamic tariff EUR], BLANK())
+
+Flexible timing difference EUR =
+IF([Observed hours]>0, (SUM(Prices[EveningMeanEURMWh])-SUM(Prices[Cheapest4MeanEURMWh])) / 1000 * SUM(Scenario[flexible_kwh_per_day]) * SUM(Scenario[vat_multiplier]), BLANK())
+
+Mean clock hour EUR per MWh =
+AVERAGE(Hourly[PriceEURMWh])

@@ -1,0 +1,56 @@
+{
+  "source": "Bundesnetzagentur | SMARD.de",
+  "source_url": "https://www.smard.de/en",
+  "license_url": "https://www.smard.de/en/datennutzung",
+  "series": "4169 / DE / hour",
+  "market": "Germany/Luxembourg bidding zone",
+  "resolution": "Published hourly price; later quarter-hour market observations are hourly aggregated by source",
+  "start": "2024-01-01",
+  "end": "2026-10-11",
+  "retrieved_on": "2026-10-12",
+  "hours": 24335,
+  "days": 1014,
+  "months": 34,
+  "mean_eur_mwh": 91.09261228682966,
+  "negative_hours": 1490,
+  "minimum": -499.0,
+  "maximum": 936.28,
+  "annual": [
+    {
+      "Year": 2024,
+      "Hours": 8784,
+      "MeanEURMWh": 78.51203324225865,
+      "NegativeHours": 457,
+      "MinimumEURMWh": -135.45,
+      "MaximumEURMWh": 936.28
+    },
+    {
+      "Year": 2025,
+      "Hours": 8760,
+      "MeanEURMWh": 89.32191210045661,
+      "NegativeHours": 573,
+      "MinimumEURMWh": -250.32,
+      "MaximumEURMWh": 583.4
+    },
+    {
+      "Year": 2026,
+      "Hours": 6791,
+      "MeanEURMWh": 109.64939920482992,
+      "NegativeHours": 460,
+      "MinimumEURMWh": -499.0,
+      "MaximumEURMWh": 697.31
+    }
+  ],
+  "assumptions": {
+    "monthly_kwh": 250,
+    "flat_eur_kwh": 0.32,
+    "dynamic_adder_eur_kwh": 0.2,
+    "vat_multiplier": 1.19,
+    "monthly_fixed_fee": 10,
+    "flexible_kwh_per_day": 12
+  },
+  "missing_dates": [
+    "2026-10-10"
+  ],
+  "coverage_percent": 99.90147378792233
+}

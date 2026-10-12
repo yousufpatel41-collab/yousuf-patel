@@ -1,0 +1,4 @@
+__pycache__/
+.venv/
+*.inspect.ndjson
+powerbi/**/.pbi/

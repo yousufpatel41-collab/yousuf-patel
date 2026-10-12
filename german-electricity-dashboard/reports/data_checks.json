@@ -1,0 +1,11 @@
+{
+  "expected_hours": 24359,
+  "observed_hours": 24335,
+  "missing_hours": 24,
+  "duplicate_utc_timestamps": 0,
+  "null_values_in_requested_window": 24,
+  "price_sum_sql_difference": -4.656612873077393e-10,
+  "price_sum_daily_difference": 0.0,
+  "days_23_hours": 3,
+  "days_25_hours": 2
+}
