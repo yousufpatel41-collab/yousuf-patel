@@ -1,4 +1,7 @@
 {
+  "env": {
+    "CLAUDE_MEM_TELEMETRY": "0"
+  },
   "extraKnownMarketplaces": {
     "thedotmack": {
       "source": {
