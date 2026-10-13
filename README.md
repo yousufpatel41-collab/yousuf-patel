@@ -20,4 +20,6 @@ See the project README for setup, sources, findings and interview notes. The com
 
 Analysis of 24,335 real published SMARD hourly electricity prices, with an interactive dashboard, editable Excel tariff scenarios, SQL database, raw source snapshot, business report and Power BI project. The model preserves negative prices, daylight saving time and missing data. Household tariffs are illustrative; Power BI Desktop refresh remains pending.
 
+The research upgrade adds a constrained EV charging planner, private browser-local consumption CSV analysis, English/German advanced pages and a chronological seasonal-naive / LightGBM / Chronos-Bolt tiny comparison. On 40 simulated 2026 test sessions, the selected Chronos model captured 43.5% of the same-constraint perfect-foresight saving opportunity. These are sampled model-based results, not annual or realised household savings. [Forecast evidence](https://yousufpatel41-collab.github.io/electricity/?view=forecast) · [Frozen protocol](german-electricity-dashboard/EXPERIMENT_PROTOCOL.md).
+
 ![Electricity dashboard preview](german-electricity-dashboard/reports/dashboard_overview.png)
