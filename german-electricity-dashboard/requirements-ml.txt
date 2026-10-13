@@ -1,0 +1,10 @@
+# CPU experiment environment. Install separately from workbook/report dependencies.
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.12.0
+scikit-learn==1.4.2
+lightgbm==4.7.0
+chronos-forecasting==2.3.2
+torch==2.14.1
+transformers==5.19.0

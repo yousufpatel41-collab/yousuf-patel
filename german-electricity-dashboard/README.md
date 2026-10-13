@@ -89,3 +89,24 @@ The browser calculator estimates a monthly budget and annual electricity bill fo
 Supplier mode: annual kWh × gross EUR/kWh + 12 × gross monthly fixed charge. German benchmark mode: annual kWh × 0.37 EUR, with no additional fixed charge. The BDEW reference is an indicative all-in household average for 2026 to date, published 21 August 2026 and manually checked 13 October 2026; it is not a live quote. Scaling the 3,500 kWh reference to another consumption level is a rough comparison. See [calculator methodology](HOUSEHOLD_CALCULATOR.md).
 
 These estimates are separate from the historical SMARD date filters and do not alter the Excel or Power BI models. Inputs stay in this browser's local storage; reset clears them.
+
+## Energy optimisation and ML research release
+
+Three new browser pages: **EV charging planner**, **Forecasting evidence**, and **Personal consumption**. The advanced pages support English/German. Published-price charging uses an exact greedy allocation for the continuous linear problem; an independent SciPy LP validates optimality. The unknown-price replay compares seasonal-naive, LightGBM quantile regression and pinned Chronos-Bolt tiny forecasts. Training, calibration, selection and testing are chronological.
+
+Personal hourly/half-hour CSVs are validated and remain in browser memory. They can constrain charging using a household connection limit. A local seasonal consumption estimate is evaluated against daily persistence; this is not a trained personal ML model or proof of unseen-household generalisation. The sample CSV is synthetic.
+
+On the frozen 2026 test, **Chronos-Bolt tiny** saved **EUR 8.98** versus immediate charging across **40 simulated sessions**, capturing **43.5%** of the same-constraint perfect-foresight saving opportunity, with **0** target misses. Calibrated nominal 80% interval coverage was **83.5%**. These are sampled historical simulations, not annual or realised household savings. Full model results, including negative outcomes, are in `reports/forecast_metrics.csv`.
+
+Reproduce in an isolated Python 3.12 environment:
+
+```text
+python -m pip install -r requirements-ml.txt
+python src/build_forecast_experiment.py
+python -m unittest discover -s tests -v
+node --test tests/test_energy_core.cjs
+```
+
+The last two checks need the report/workbook dependencies from `requirements.txt` if running the entire historical suite; the ML environment pins its own pandas version. Model weights download from the public Hugging Face checkpoint on first run. The browser needs no model API or installed ML runtime; it reads precomputed research forecasts. The CSV example file can be loaded by serving the dashboard over HTTP.
+
+See [frozen protocol](EXPERIMENT_PROTOCOL.md), [pilot study plan](USER_STUDY.md), and [research limitations](RESEARCH_LIMITATIONS.md). This release is a one-shot historical scheduler, not MPC or a real wallbox controller. Causal ML, NILM, solar/battery, heating control, a live tariff feed and completed external user validation remain roadmap items. No automatic supplier switching occurs. The Excel/Power BI files retain their original historical tariff models; the ML experiment is a separate Python/browser module.
