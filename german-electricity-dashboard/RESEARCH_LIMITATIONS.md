@@ -9,3 +9,9 @@ Measured lessons: the seasonal-naive schedule lost money versus immediate chargi
 A separate LP reproduces the greedy optimum for divisible hourly energy and linear prices. This does not validate integer charging sessions, minimum charging duration, battery state-of-charge trajectories or physical device control. Those require a richer model.
 
 Personal-file analysis is device-local and its demand forecast is a seasonal baseline. Missing readings are excluded; incomplete half-hour pairs cannot supply a full hourly connection constraint. The method matches UTC hours, which can differ from local routines across DST. Imported consumption is historical, not a guarantee of future household demand. External user testing has a protocol but no completed participants.
+
+## V2 qualification
+
+V2 supersedes V1 as the operational headline. Arrival is a scenario assumption at 18:00, not observed German EV behaviour. Current/next-day prices are assumed published at 16:00; no audited historical publication log is available. Intermediate departure minimum-energy requirements are now enforced. Hourly prices and continuous allocation remain approximations; no physical device is controlled.
+
+Monthly LightGBM is trained using labels strictly before the actual decision month's boundary. Bootstrap CIs use paired nine-day blocks and describe this historical scenario only. They do not establish German population effects, eliminate market regime uncertainty or guarantee future savings. A positive test CI does not override the validation promotion gate. Known-only remains selected. The external pilot has zero completed participants.

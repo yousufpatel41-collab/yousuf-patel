@@ -1,6 +1,6 @@
-# Frozen experiment protocol — 13 October 2026
+# V1 local protocol — committed with its results
 
-This protocol is written before viewing the first results of this upgrade.
+This local protocol was drafted before computation but committed with results. It is not externally pre-registered. V2 has a separate public pre-experiment commit/tag.
 
 Train price models on 2024. Calibrate intervals on January–March 2025. Select between seasonal-naive, LightGBM quantile regression and Chronos-Bolt tiny on April–December 2025. Evaluate the selected model once on January–October 2026, an incomplete year. No test-driven tuning. Weekly 48-hour forecast blocks, disjoint, skip blocks with unavailable actual prices, lags or contiguous foundation-model context. No invented prices.
 

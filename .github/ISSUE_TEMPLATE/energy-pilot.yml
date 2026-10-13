@@ -1,0 +1,43 @@
+name: Household energy pilot feedback
+description: Voluntary usability feedback. No bills, meter data or personal details.
+title: "[Energy pilot] Usability feedback"
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public and linked to your GitHub account. Please omit personal details, bills and meter readings. Feedback is self-reported, not measured savings."
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language used / verwendete Sprache
+      options: [English, Deutsch]
+    validations:
+      required: true
+  - type: checkboxes
+    id: tasks
+    attributes:
+      label: Tasks completed without help / Aufgaben ohne Hilfe
+      options:
+        - label: Calculate an EV charging plan
+        - label: Explain published prices versus forecasts
+        - label: Identify a charging-energy shortfall
+        - label: Import the synthetic CSV
+        - label: Export a plan
+  - type: dropdown
+    id: ease
+    attributes:
+      label: Ease of use / Bedienbarkeit
+      options: ["1 — difficult", "2", "3", "4", "5 — easy"]
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Confusing labels or suggestions / Unklare Beschriftungen
+      description: Do not include personal details, bills or meter data.
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Public sharing acknowledgement
+      options:
+        - label: I choose to publish this feedback publicly and have omitted personal or billing data.
+          required: true

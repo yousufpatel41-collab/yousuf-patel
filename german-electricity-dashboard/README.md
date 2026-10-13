@@ -110,3 +110,17 @@ node --test tests/test_energy_core.cjs
 The last two checks need the report/workbook dependencies from `requirements.txt` if running the entire historical suite; the ML environment pins its own pandas version. Model weights download from the public Hugging Face checkpoint on first run. The browser needs no model API or installed ML runtime; it reads precomputed research forecasts. The CSV example file can be loaded by serving the dashboard over HTTP.
 
 See [frozen protocol](EXPERIMENT_PROTOCOL.md), [pilot study plan](USER_STUDY.md), and [research limitations](RESEARCH_LIMITATIONS.md). This release is a one-shot historical scheduler, not MPC or a real wallbox controller. Causal ML, NILM, solar/battery, heating control, a live tariff feed and completed external user validation remain roadmap items. No automatic supplier switching occurs. The Excel/Power BI files retain their original historical tariff models; the ML experiment is a separate Python/browser module.
+
+## V2 operational evaluation — replaces the midnight headline benchmark
+
+[Public protocol commit](https://github.com/yousufpatel41-collab/yousuf-patel/commit/788e4c1d1bac14e0c53760e391c8dfb069cb01ae) and [pre-experiment tag](https://github.com/yousufpatel41-collab/yousuf-patel/releases/tag/v2-protocol-2026-10-13) were published before V2 computation. V1 was committed together with results and was not externally pre-registered. Its artifacts remain preserved.
+
+V2 starts at 18:00 Berlin, re-plans hourly using published prices, forecasts only unknown delivery hours, and enforces first/final departure targets. It compares immediate, known-only rolling, seasonal rolling, fixed-2024 LightGBM, monthly past-only LightGBM, Chronos and a same-constraint oracle. Overnight and two-night cases are separate; overnight has zero incremental forecasting value because prices are known.
+
+The two-night 2026 test contains **93 simulated sessions**. Known-price-only saved **EUR 127.35** versus immediate and captured **95.05%** of oracle opportunity. No ML policy passed every predeclared validation promotion gate, so known-only remains selected. Chronos's incremental test savings are reported with paired block-bootstrap confidence intervals rather than used to change the selection. These are sampled synthetic-session results, not annual or realised household savings.
+
+Rebuild V2 with `python src/build_rolling_experiment.py` in the ML environment. Full sessions, metrics, paired contrasts, chronology and retraining cutoffs are in `reports/rolling_experiment.json`; the browser bundle includes selected replay examples. Run Python and Node checks as above.
+
+CSV import now supports 15/30/60-minute energy, complete-hour aggregation, explicit column mappings, German date/time, decimal-comma Wh, timezone selection, start/end timestamps and an explicitly selected chronological DST convention. It does not certify every supplier format or silently convert cumulative readings/power.
+
+Pilot invitation, local feedback export and a voluntary public GitHub issue form are ready. **Completed external pilots: 0.** The owner currently has no testers; this status remains unchanged until real consented responses are reviewed. No third-party messages or recruitment posts have been sent.
