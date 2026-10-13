@@ -16,7 +16,7 @@ The market data is **real published SMARD data** for the Germany/Luxembourg bidd
 - `src`, `sql`, `tests`: reproducible preparation, business queries and validation.
 - `data/raw` and `data/source_manifest.json`: preserved weekly source responses and checksums.
 
-Open the dashboard directly in a browser or run `python -m http.server 8742` from this folder and visit `http://localhost:8742/dashboard/`. The dashboard starts at 2026 year to date. Excel initially shows the complete historical window.
+Open the dashboard directly in a browser or run `python -m http.server 8742` from this folder and visit `http://localhost:8742/dashboard/`. The dashboard opens with a one-household bill calculator. Historical market pages initially show 2026 year to date. Excel initially shows the complete historical window.
 
 ## Data and findings
 
@@ -81,3 +81,11 @@ Suggested CV bullet: “Analysed 24,335 hourly German electricity prices using P
 ## Source and licence
 
 Attribution: **Bundesnetzagentur | SMARD.de**. Series 4169, DE, hour. [SMARD market data](https://www.smard.de/en), [data-use terms](https://www.smard.de/en/datennutzung), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Raw source URLs and SHA-256 hashes are recorded in `data/source_manifest.json`. Code uses the MIT licence in `LICENSE`; source data remains under CC BY 4.0.
+
+## One-household bill calculator
+
+The browser calculator estimates a monthly budget and annual electricity bill for one electricity account. It uses annual/monthly billed kWh, two dated meter readings, or editable appliance-use assumptions. It does not infer consumption from room count or number of residents.
+
+Supplier mode: annual kWh × gross EUR/kWh + 12 × gross monthly fixed charge. German benchmark mode: annual kWh × 0.37 EUR, with no additional fixed charge. The BDEW reference is an indicative all-in household average for 2026 to date, published 21 August 2026 and manually checked 13 October 2026; it is not a live quote. Scaling the 3,500 kWh reference to another consumption level is a rough comparison. See [calculator methodology](HOUSEHOLD_CALCULATOR.md).
+
+These estimates are separate from the historical SMARD date filters and do not alter the Excel or Power BI models. Inputs stay in this browser's local storage; reset clears them.
